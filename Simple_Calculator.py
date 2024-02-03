@@ -1,6 +1,6 @@
 # This is a simple, command prompt calculator that does baisc 4 operatrions
 
-# functions
+# functions for the calculator
 def add(a, b):
     return (a + b)
 def sub(a, b):
