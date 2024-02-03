@@ -32,6 +32,8 @@ while (number_2_works != 1):
     except ValueError:
         number_2 = input(f"Enter 2nd number : ")
 
+
+# Taking User input for the operation
 print(f"Enter 1 to do Addition : \nEnter 2 to do Subtraction : \nEnter 3 to do Multipication : \nEnter 4 to do division : ")
 operation = input("Enter your choice : ")
 operation_works = 0
@@ -41,6 +43,8 @@ while(operation_works != 1):
     else:
         operation = input("Enter a valid choice : ")
 
+
+# Doing the operation selected by the user and displaying the output
 if (operation == "1"):
     print(f"{add(number_1, number_2)}")
 elif (operation == "2"):
