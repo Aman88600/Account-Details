@@ -10,7 +10,10 @@ while (exit != 1):
         print("\n")
     elif choice == 2:
         task_number = int(input("Enter the Task number to remove : "))
-        tasks.pop(task_number - 1)
+        if task_number > len(tasks):
+            print("Not in Tasks\n")
+        else:
+            tasks.pop(task_number - 1)
         print("\n")
     elif choice == 3:
         for index, element in enumerate(tasks, start=1):
