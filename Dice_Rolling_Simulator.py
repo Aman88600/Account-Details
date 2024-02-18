@@ -1,6 +1,5 @@
 import random
 
-number = random.randint(1,6)
 def print_dice_face(number):
     if number == 1:
         print(" ------- ")
@@ -40,4 +39,15 @@ def print_dice_face(number):
         print(" ------- ")
     else:
         print("Invalid dice face number")
-print_dice_face(number)
+# Choice
+exit = 0
+while exit == 0:
+    print("1 to Roll\n2 to stop")
+    choice = int(input("Enter your choice : "))
+    if choice == 1:
+        number = random.randint(1,6)
+        print_dice_face(number)
+    elif choice == 2:
+        exit = 1
+    else:
+        print(f"Invalid choice\n")
