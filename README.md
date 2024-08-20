@@ -1,1 +1,2 @@
 Alright, So I Have this Problem with, Storing all my account details of different websites and apps, so I am coding a solution for it :)
+Step 1. I am learning how to use json with python, because i want to store data in json file format.
