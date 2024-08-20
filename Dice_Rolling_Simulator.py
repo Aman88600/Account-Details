@@ -1,4 +1,4 @@
-# This a dice roller simulator inside the shell
+# This a dice roller simulator inside the shell made with python
 import random
 
 def print_dice_face(number):
