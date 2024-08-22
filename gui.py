@@ -14,13 +14,20 @@ def set_name():
     output = name.get()
     details = {}
     if output:
-        details["name"] = str(output)
+        details["Entry"] = str(output)
         print(details)
+        count = 2
+        new_entry = customtkinter.CTkButton(app, text = output, width = 200)
+        # new_entry.grid(row = count, column = 0, padx = 100, pady = 20)
+        new_entry.pack()
+        count += 1
         with open("data.json", "w") as fp:
             json.dump(details, fp, indent=4)
 
-name = customtkinter.CTkEntry(app, placeholder_text="Enter Your Name", width = 200)
-name.grid(row = 0, column = 0, padx = 100, pady = 20)
-name_button = customtkinter.CTkButton(app, text = "Enter", width = 200, command = set_name)
-name_button.grid(row=1, column=0, padx = 100)
+name = customtkinter.CTkEntry(app, placeholder_text="Entry Name", width = 200)
+# name.grid(row = 0, column = 0, padx = 100, pady = 20)
+name.pack()
+name_button = customtkinter.CTkButton(app, text = "Create New Entry", width = 200, command = set_name)
+# name_button.grid(row=1, column=0, padx = 100)
+name_button.pack()
 app.mainloop()
